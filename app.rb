@@ -9,6 +9,6 @@ class App < Sinatra::Base
 
   ger '/square/:number' do
     @number = params[:number]
-    @number.to_i.square
+    @number.to_i 
   end
 end
