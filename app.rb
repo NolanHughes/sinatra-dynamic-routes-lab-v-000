@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @phrase * @number
   end
-  
+
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     word_array = []
 
@@ -32,6 +32,20 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    
+    @number1 = params[:number1]
+    @number2 = params[:number2]
+    @operation = params[:operation]
+
+    if @operation = "add"
+      "#{@number1 + @number2}"
+    elsif @operation = "add"
+      "#{@number1 + @number2}"
+    elsif @operation = "add"
+      "#{@number1 + @number2}"
+    elsif @operation = "add"
+      "#{@number1 + @number2}"
+    else
+      nil
+    end
   end
 end
