@@ -17,6 +17,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @phrase * @number
   end
+  
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     word_array = []
 
@@ -28,5 +29,9 @@ class App < Sinatra::Base
 
     word_array[-1].insert(-1, '.')
     word_array.join(" ")
+  end
+
+  get '/:operation/:number1/:number2' do
+    
   end
 end
