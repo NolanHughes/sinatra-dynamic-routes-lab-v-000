@@ -45,7 +45,7 @@ class App < Sinatra::Base
     elsif @operation = "add"
       "#{@number1 + @number2}"
     else
-      nil
+      "Not a valid operation! Try a different url"
     end
   end
 end
