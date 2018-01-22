@@ -7,7 +7,7 @@ class App < Sinatra::Base
     @name.reverse
   end
 
-  get6 '/square/:number' do
+  get '/square/:number' do
     @number = params[:number]
     binding.pry
     @number.to_i
