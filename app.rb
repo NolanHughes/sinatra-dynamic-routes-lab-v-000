@@ -25,8 +25,8 @@ class App < Sinatra::Base
     word_array << params[:word3]
     word_array << params[:word4]
     word_array << params[:word5]
-    binding.pry
+
     word_array[-1].insert(-1, '.')
-    word_array[-1].insert(-1, '.')
+    word_array.join(" ")
   end
 end
